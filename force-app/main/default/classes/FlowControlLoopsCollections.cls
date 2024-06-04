@@ -345,12 +345,18 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Integer sumPositiveIntegers() {
         List<Integer> numbers = new List<Integer>{-1, 2, -3, 4, -5, 6}; //DO NOT CHANGE
-
-        // Loop through the list of integers
-            // if the number is negative skip this iteration
+        //List<Integer> positiveNumList = new List<Integer>();
+        Integer sum = 0;
         
-
-        return null; // Replace null with the variable you used to store the result
+        // Loop through the list of integers
+            // if the number is positive, add it to the sum
+        for(Integer n : numbers) {
+            if (n > 0) {
+                sum += n;
+            }
+        }
+        return sum; // Replace null with the variable you used to store the result
+        
     }
 
     /**
