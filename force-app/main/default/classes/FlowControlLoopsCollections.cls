@@ -309,14 +309,14 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static List<Integer> createIntegerList(Integer n) {
         // Create a new list of integers 
+        List<Integer> intList = new List<Integer>();
 
-        /*
-        for() {
-            //add integer to the list
+        // Use a for loop to add integers from 1 to n to the list
+        for (Integer i = 1; i <= n; i++) {
+            intList.add(i);
         }
-        */ 
 
-        return null; // Replace null with the variable you used to store the result
+        return intList; // Replace null with the variable you used to store the result
     }
 
     /**
