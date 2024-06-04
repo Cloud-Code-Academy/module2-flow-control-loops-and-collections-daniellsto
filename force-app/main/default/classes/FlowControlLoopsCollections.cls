@@ -438,6 +438,7 @@ public with sharing class FlowControlLoopsCollections {
         fruits.put('Oranges', 10);
         fruits.put('Bananas', 15);
         fruits.put('Pears', 20);
+        fruits.put('Grapes', 25);
 
         return fruits; // Replace null with the variable you used to store the result
     }
