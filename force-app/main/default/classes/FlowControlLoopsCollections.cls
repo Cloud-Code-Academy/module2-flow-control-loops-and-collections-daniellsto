@@ -14,7 +14,7 @@
 * in flow control, loops, and collections. By mastering these concepts, developers will be able to write more
 * efficient and effective code in their Salesforce projects.
 *
-* @author Your Name
+* @author Daniel S
 */
 
 public with sharing class FlowControlLoopsCollections {
@@ -156,7 +156,7 @@ public with sharing class FlowControlLoopsCollections {
         } else {
 
             return notEmptyStrMsg;
-            
+
         }
     }
 
@@ -173,7 +173,25 @@ public with sharing class FlowControlLoopsCollections {
      * @return The grade for the given score.
      */
     public static String determineGrade(Integer score) {
-        return null; // Replace null with the variable you used to store the result
+        //return null; // Replace null with the variable you used to store the result
+        String gradeA = 'A';
+        String gradeB = 'B';
+        String gradeC = 'C';
+        String gradeD = 'D';
+        String gradeF = 'F';
+
+        if (score >= 90) {
+            return gradeA;
+        } else if (score >= 80) {
+            return gradeB;
+        } else if (score >= 70) {
+            return gradeC;
+        } else if (score >= 60) {
+            return gradeD;
+        } else {
+            return gradeF;
+        }
+        
     }
 
 
